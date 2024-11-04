@@ -7,10 +7,7 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: '현재 위치 불러오기',
-        home: MapSample()
-    );
+    return MaterialApp(title: '현재 위치 불러오기', home: MapSample());
   }
 }
 
