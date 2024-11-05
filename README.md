@@ -1,3 +1,5 @@
+# Flutter Project Structure
+
 lib/  
 ├── main.dart               # 엔트리 포인트  
 ├── core/                   # 공통적으로 사용되는 유틸리티, 상수, 테마, API 등  
