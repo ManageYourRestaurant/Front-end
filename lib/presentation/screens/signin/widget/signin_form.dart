@@ -35,7 +35,8 @@ class _SigninFormState extends State<SigninForm> {
               TextButton(
                 onPressed: () {
                   Navigator.pop(context); // 다이얼로그 닫기
-                  // Navigator.pushReplacementNamed(context, Routes.home); // 홈 화면으로 이동
+                  Navigator.pushReplacementNamed(
+                      context, Routes.mainPage); // 메인 화면으로 이동
                 },
                 child: Text("확인"),
               ),
