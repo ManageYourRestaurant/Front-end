@@ -16,10 +16,13 @@ class _SigninFormState extends State<SigninForm> {
 
   Future<void> _handleLogin() async {
     // Form 위젯이 유효한지 검증
-    if (_formKey.currentState?.validate() ?? false) {
+    if (_formKey.currentState!.validate()) {
       // null 체크 추가
       final username = _usernameController.text;
       final password = _passwordController.text;
+
+      print(username);
+      print(password);
 
       // 로그인 API 호출
       final success = await _authApi.login(username, password);
